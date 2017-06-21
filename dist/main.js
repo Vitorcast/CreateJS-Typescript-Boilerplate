@@ -1,27 +1,16 @@
-(function() {
-    var canvas;
-    var stage;
-    var helloLabel;
-
-    function Start(){
-        canvas = document.getElementById('canvas');
-        stage = new createjs.Stage(canvas);
-        createjs.Ticker.framerate = 60;
-        createjs.Ticker.on('tick', Update);
-        Game();
+var Main = (function () {
+    function Main() {
+        this.canvas = document.getElementById('canvas');
+        this.stage = new createjs.Stage(this.canvas);
+        var label = new createjs.Text("Hello, World", "60px Consolas", 'black');
+        this.stage.addChild(label);
+        createjs.Ticker.setFPS(60);
+        createjs.Ticker.on('tick', this.handleTick.bind(this));
     }
-
-    function Update(){
-        stage.update();
-    }
-
-    function Game(){
-        console.log('Game Starting...');
-
-        helloLabel  = new createjs.Text("Hello World", "60px Consolas", "black");
-        stage.addChild(helloLabel);
-    }
-
-    window.onload = Start;
-
-})();
+    Main.prototype.handleTick = function () {
+        this.stage.update();
+    };
+    return Main;
+}());
+var x = new Main();
+//# sourceMappingURL=main.js.map
