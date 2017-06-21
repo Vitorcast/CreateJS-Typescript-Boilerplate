@@ -11,8 +11,9 @@ module objects{
             super(textString,fontSize + " " + fontType,fontColor);
 
             if(this.isCentered){
-                this.regX = this.getMeasuredWidth() * 0.5;
-                this.regY = this.getMeasuredHeight() * 0.5;
+              
+               this.regX = this.getBounds().width * 0.5;
+               this.regY = this.getBounds().height * 0.5;
             }
 
             this.x = x;

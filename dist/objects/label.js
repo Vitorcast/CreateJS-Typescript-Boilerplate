@@ -20,8 +20,8 @@ var objects;
             _this.fontColor = fontColor;
             _this.isCentered = isCentered;
             if (_this.isCentered) {
-                _this.regX = _this.getMeasuredWidth() * 0.5;
-                _this.regY = _this.getMeasuredHeight() * 0.5;
+                _this.regX = _this.getBounds().width * 0.5;
+                _this.regY = _this.getBounds().height * 0.5;
             }
             _this.x = x;
             _this.y = y;

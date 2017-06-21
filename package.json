@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/createjs": "0.0.29"
+  },
+  "dependencies": {
+    "lite-server": "^2.3.0"
   }
 }
