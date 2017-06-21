@@ -1,0 +1,24 @@
+{
+  "name": "CreatejsBoilerplate",
+  "authors": [
+    "Vitorcast <tvitor.castilho@gmail.com>"
+  ],
+  "description": "Typescript CreateJs Boilerplate",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "EaselJS": "^0.8.2",
+    "SoundJS": "^0.6.2",
+    "TweenJS": "^0.6.2",
+    "PreloadJS": "^0.6.2"
+  }
+}
